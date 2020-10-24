@@ -1,0 +1,43 @@
+.player_card_container {
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 250px));
+    grid-gap: 10px;
+}
+
+.player_card {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #CECECE;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    height: auto;
+    max-height: 400px;
+}
+
+.player_image {
+    width: 50%;
+    border: 5px solid black
+}
+
+.player_name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.player_skill {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.search_input {
+    padding: 10px 10px;
+    width: 25%;
+    margin: 20px;
+}
+
+.player_value, .player_next_match {
+    font-weight: bold;
+}
