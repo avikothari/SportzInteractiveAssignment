@@ -5,10 +5,7 @@ function getPlayers() {
     fetch('https://api.jsonbin.io/b/5d0c6e6a860ae0341876aac6/2')
         .then(response => response.json())
         .then(data => {
-            // 
-
             players = data.reverse()
-
             iteratePlayers(players)
         });
 }
@@ -49,7 +46,6 @@ function getMatchDate(date){
 
 function searchPlayers(){
     let search_str = document.getElementById('search').value
-    console.log(players.filter(x => x.PFName.toLowerCase().includes(search_str)))
 
     iteratePlayers(players.filter(player =>
         player.PFName.toLowerCase().indexOf(search_str.toLowerCase()) !== -1 
