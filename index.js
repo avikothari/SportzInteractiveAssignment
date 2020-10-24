@@ -6,7 +6,6 @@ function getPlayers() {
         .then(response => response.json())
         .then(data => {
             // 
-            console.log(data)
 
             players = data.reverse()
 
